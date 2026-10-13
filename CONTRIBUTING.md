@@ -1,6 +1,6 @@
 # Contributing
 
-Small, focused improvements are welcome. Open an issue to discuss substantial behavior changes before implementing them.
+Read and follow our [Code of Conduct](CODE_OF_CONDUCT.md). Small, focused improvements are welcome. Open an issue to discuss substantial behavior changes before implementing them.
 
 ## Local workflow
 

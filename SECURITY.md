@@ -6,7 +6,7 @@ Security fixes target the latest published release. Earlier versions should be u
 
 ## Report a vulnerability
 
-Use [GitHub private vulnerability reporting](https://github.com/o1o1o3/raycast-digup/security/advisories/new). Do not publish exploitable details in a public issue. Include the affected version, a minimal synthetic reproduction, impact and any suggested mitigation. Do not include private documents, tokens or a real index.
+Use [GitHub private vulnerability reporting](https://github.com/theartofdevel/raycast-digup/security/advisories/new). Do not publish exploitable details in a public issue. Include the affected version, a minimal synthetic reproduction, impact and any suggested mitigation. Do not include private documents, tokens or a real index.
 
 This is a community-maintained project; response times are not guaranteed.
 
