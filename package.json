@@ -107,11 +107,11 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/o1o1o3/raycast-digup.git"
+    "url": "https://github.com/theartofdevel/raycast-digup.git"
   },
-  "homepage": "https://github.com/o1o1o3/raycast-digup#readme",
+  "homepage": "https://github.com/theartofdevel/raycast-digup#readme",
   "bugs": {
-    "url": "https://github.com/o1o1o3/raycast-digup/issues"
+    "url": "https://github.com/theartofdevel/raycast-digup/issues"
   },
   "engines": {
     "node": ">=22.22.2"

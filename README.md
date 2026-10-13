@@ -2,8 +2,8 @@
 
 # DigUp Local Search for Raycast
 
-[![CI](https://github.com/o1o1o3/raycast-digup/actions/workflows/ci.yml/badge.svg)](https://github.com/o1o1o3/raycast-digup/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/o1o1o3/raycast-digup)](https://github.com/o1o1o3/raycast-digup/releases/latest)
+[![CI](https://github.com/theartofdevel/raycast-digup/actions/workflows/ci.yml/badge.svg)](https://github.com/theartofdevel/raycast-digup/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/theartofdevel/raycast-digup)](https://github.com/theartofdevel/raycast-digup/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Search your local code, documents and screenshots from Raycast with [DigUp](https://github.com/ARahim3/DigUp). Describe what you remember, or search by exact words. DigUp owns the index and on-device model; this extension brings its search results into Raycast.
@@ -39,7 +39,7 @@ The extension uses DigUp's existing settings and index. It does not automaticall
    ```
 
 2. Open DigUp, download its model, and choose folders. Configure code folders separately in DigUp's Code settings. Allow indexing to start.
-3. Download `digup-local.rayext` from the [latest release](https://github.com/o1o1o3/raycast-digup/releases/latest) and open it to import the extension into Raycast.
+3. Download `digup-local.rayext` from the [latest release](https://github.com/theartofdevel/raycast-digup/releases/latest) and open it to import the extension into Raycast.
 4. Search for **Search Code**, **Search Files** or **Search Screenshots** in Raycast. Look for the **DigUp** subtitle.
 
 A `SHA256SUMS` file accompanies each release. To verify a download, place both files in the same folder and run `shasum -a 256 -c SHA256SUMS` there.
@@ -83,7 +83,7 @@ See [architecture](docs/architecture.md) and the [security policy](SECURITY.md) 
 Use Node **22.22.2 or newer**; `.nvmrc` pins the version used by CI.
 
 ```sh
-git clone https://github.com/o1o1o3/raycast-digup.git
+git clone https://github.com/theartofdevel/raycast-digup.git
 cd raycast-digup
 nvm use
 npm ci
@@ -108,7 +108,7 @@ Build before running `typecheck` on a fresh checkout: Raycast generates `raycast
 
 ## Contributing and support
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. Report reproducible bugs through [Issues](https://github.com/o1o1o3/raycast-digup/issues); share only sanitized examples. Report vulnerabilities privately as described in [SECURITY.md](SECURITY.md).
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. Report reproducible bugs through [Issues](https://github.com/theartofdevel/raycast-digup/issues); share only sanitized examples. Report vulnerabilities privately as described in [SECURITY.md](SECURITY.md).
 
 ## License and acknowledgments
 

@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Report a security vulnerability
-    url: https://github.com/o1o1o3/raycast-digup/security/advisories/new
+    url: https://github.com/theartofdevel/raycast-digup/security/advisories/new
     about: Please report exploitable vulnerabilities privately.
   - name: DigUp engine
     url: https://github.com/ARahim3/DigUp
