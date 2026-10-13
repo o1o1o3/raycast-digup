@@ -124,9 +124,8 @@ export default function SearchView({
 
   useEffect(() => {
     let obsolete = false;
-    const text = query
-      .trim()
-      .replace(mode === "code" ? /^code:\s*/i : /$^/, "");
+    const trimmed = query.trim();
+    const text = mode === "code" ? trimmed.replace(/^code:\s*/i, "") : trimmed;
     setHits([]);
     setWarning(undefined);
     setMeaning(false);
