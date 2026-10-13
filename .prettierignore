@@ -1,0 +1,8 @@
+node_modules/
+dist/
+raycast-env.d.ts
+package-lock.json
+*.rayext
+docs/superpowers/
+assets/licenses/
+SHA256SUMS

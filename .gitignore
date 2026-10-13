@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.rayext
+raycast-env.d.ts
+.DS_Store
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+# Local setup notes contain machine-specific paths and session history.
+docs/superpowers/
+SHA256SUMS

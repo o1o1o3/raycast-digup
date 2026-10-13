@@ -1,0 +1,119 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "digup-local",
+  "title": "DigUp Local Search",
+  "description": "Search local files, source code and screenshots using the installed DigUp engine.",
+  "icon": "icon.png",
+  "author": "dikkini",
+  "license": "MIT",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "Developer Tools",
+    "Productivity"
+  ],
+  "commands": [
+    {
+      "name": "search-code",
+      "title": "Search Code",
+      "subtitle": "DigUp",
+      "description": "Find code by meaning or exact text in your DigUp code folders.",
+      "mode": "view"
+    },
+    {
+      "name": "search-files",
+      "title": "Search Files",
+      "subtitle": "DigUp",
+      "description": "Search the contents of your locally indexed files.",
+      "mode": "view"
+    },
+    {
+      "name": "search-screenshots",
+      "title": "Search Screenshots",
+      "subtitle": "DigUp",
+      "description": "Find screenshots by their contents or visible text.",
+      "mode": "view"
+    },
+    {
+      "name": "open-digup",
+      "title": "Open DigUp",
+      "description": "Open DigUp to manage indexed folders and model downloads.",
+      "mode": "no-view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "applicationPath",
+      "title": "DigUp Application",
+      "description": "Location of the installed DigUp app.",
+      "type": "appPicker",
+      "required": false,
+      "default": "/Applications/DigUp.app"
+    },
+    {
+      "name": "codeEditor",
+      "title": "Open Code In",
+      "description": "Editor used when opening a result at its matching line.",
+      "type": "dropdown",
+      "required": false,
+      "default": "default",
+      "data": [
+        {
+          "title": "Default Application",
+          "value": "default"
+        },
+        {
+          "title": "Visual Studio Code",
+          "value": "vscode"
+        },
+        {
+          "title": "Cursor",
+          "value": "cursor"
+        },
+        {
+          "title": "Zed",
+          "value": "zed"
+        }
+      ]
+    }
+  ],
+  "scripts": {
+    "dev": "ray develop",
+    "build": "ray build -e dist",
+    "lint": "ray lint",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "bundle": "ray bundle -o digup-local.rayext",
+    "check": "npm run build && npm run typecheck && npm test && npm run lint && npm run format:check"
+  },
+  "dependencies": {
+    "@raycast/api": "2.7.3",
+    "plist": "^3.1.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "2.2.0",
+    "@types/node": "22.19.17",
+    "@types/plist": "^3.0.5",
+    "@types/react": "19.0.10",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.9.0"
+  },
+  "version": "0.1.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/o1o1o3/raycast-digup.git"
+  },
+  "homepage": "https://github.com/o1o1o3/raycast-digup#readme",
+  "bugs": {
+    "url": "https://github.com/o1o1o3/raycast-digup/issues"
+  },
+  "engines": {
+    "node": ">=22.22.2"
+  }
+}

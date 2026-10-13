@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a reproducible problem with the extension.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic examples. Do not include private paths, document contents, credentials or raw indexes. Report security issues privately using SECURITY.md."
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions
+      description: Extension, DigUp, Raycast and macOS versions.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include the command and a sanitized example query.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Sanitized diagnostics
+      description: Relevant error, indexing status, and whether semantic search is active.
